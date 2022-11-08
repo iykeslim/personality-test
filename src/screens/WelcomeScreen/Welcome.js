@@ -1,0 +1,24 @@
+import React from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Header from '../../components/headerComponents/Header.js';
+import './welcome.css'
+
+const Welcome = () => {
+  return (
+            <div className='col d-flex justify-content-center centered w-50 h-90' >
+                <Card id='main-container' className='h-100 text-center shadow p-3 mb-5 bg-white rounded border-0 rounded w-100'>
+              <Header />
+                    <Card.Body>
+                        {/* <Card.Title>Special title treatment</Card.Title> */}
+                        <Card.Text className='text-white-100'>
+                            Only honest answers guarantee honest results
+                        </Card.Text>
+                        <Button variant="secondary border-0" className='btn btn-outline-dark btn-sm' >Let's Go</Button>
+                    </Card.Body>
+                </Card>
+            </div>
+          )
+}
+
+export default Welcome
