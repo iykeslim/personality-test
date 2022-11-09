@@ -6,11 +6,11 @@ import Header from '../../components/headerComponents/Header.js';
 import './welcome.css'
 
 const Welcome = () => {
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
-    let onGoClick = () => {
-        navigate('/question')
-    }
+   function onGoClick() {
+       navigate('/question')
+   }
   return (
             <div className='col d-flex justify-content-center centered w-50 h-90' >
                 <Card id='main-container' className='h-100 text-center shadow p-3 mb-5 bg-white rounded border-0 rounded w-100'>

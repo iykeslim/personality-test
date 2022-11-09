@@ -4,7 +4,7 @@ export function getQuestions() {
             question:
                 'I get uneasy when my space is not clean',
             
-                ses: [
+                responses: [
                 {
                     response: 'Yes. that is accurately me',
                     likelihoodscale: 2,
