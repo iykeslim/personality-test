@@ -1,0 +1,19 @@
+.container {
+    max-width: 70rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 2px solid rgb(25, 24, 24);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+ul li:hover {
+    background-color: #615e57;
+}
