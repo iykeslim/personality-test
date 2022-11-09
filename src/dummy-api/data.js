@@ -94,6 +94,30 @@ export function getQuestions() {
                 },
             ],
         },
+        {
+            question: 'I am shy at first but later on I am very expressive.',
+            responses: [
+                {
+                    response:
+                        'That feels like me',
+                    likelihoodscale: 4,
+                },
+                {
+                    response: 'Very accurate',
+                    likelihoodscale: 2,
+                },
+                {
+                    response: 'Not really, Most times I am expressive from the start',
+                    likelihoodscale: 7,
+                },
+                {
+                    response:
+                        'No. I am a very expressive person',
+                    likelihoodscale: 9,
+                },
+            ],
+        },
+        
     ];
 
     return questions;
