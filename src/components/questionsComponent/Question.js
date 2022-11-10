@@ -13,15 +13,16 @@ const Question = ({question, responses, selectResponse}) => {
     }
     console.log(responses)
   return (
-      <Card>
+    <div className='questions-container'>
+      <Card className='border-color-secondary shadow-lg h-100 d-flex text-center'>
              <Card.Body>
-              <div data-testid="question-main" className='container'>
-                  <Card.Text>{question}</Card.Text>
-              <ul data-testid="responses">
+              <div className='container'>
+                      <Card.Header><h1>{question}</h1></Card.Header>
+                      <ul className="list-group shadow-lg">
                   {responses?.map((response, key) => (
                       
-                      <li
-                          data-testid="response"
+                      <li className="list-group-item"
+                          role='button'
                           key={key}
                           onClick={() => onClickResponse(response)}
                       >
@@ -32,6 +33,7 @@ const Question = ({question, responses, selectResponse}) => {
           </div >
              </Card.Body>
       </Card>
+      </div>
     )
 }
 

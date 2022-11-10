@@ -1,17 +1,21 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { computeVersion, EXTROVERT, INTROVERT } from '../../providers/computeVersion.js'
 
 const Outcome = () => {
-
+  const navigate = useNavigate()
   const responses = useSelector((state) => state.versionTest.responses)
   const version = computeVersion(responses)
 
+  const onClickRetake = () => {
+    navigate('/')
+  }
 
 
   return (
-    <div className='outcome-container text-center justify-content-center'>
+    <div className='container text-center justify-content-center'>
       <Card>
         {version === EXTROVERT && (          
           <Card.Body>
@@ -35,8 +39,10 @@ const Outcome = () => {
             </Card.Body>
           </div>
         )}
+        <Button className='btn btn-lg bg-secondary' onClick={onClickRetake}>Retake Test</Button>
       </Card>
    </div>
+   
      
   )
 }

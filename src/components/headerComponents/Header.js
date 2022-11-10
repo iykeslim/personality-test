@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import Image from '../imagesComponent/Image.js'
 
 const Header = () => {
   return (
