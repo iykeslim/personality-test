@@ -1,13 +1,17 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
   box-sizing: border-box;
   margin: 0;
   font-family: -apple-system, helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;margin: 0;
+  overflow: auto;
+  background-size: cover;
+  background-color: #f5f5fe;
   }
+
 
 
 code {
@@ -24,31 +28,20 @@ code {
 
 .app {
   display: flex;
-  text-align: center;
   justify-content: center;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
 }
-
-.app>.container {
-  justify-content: center;
+.w-90{
+  width: 90%;
 }
-
-/* Media Query for Mobile Devices */
-/* center my card - custom css */
-* {
-  background-color: rgb(255, 255, 255);
-  color: black;
+.bg-light-blue{
+  background-color: #f5f5fe;
 }
-
-@media (max-width: 480px) {
-  body {
-    min-height: fit-content;
-    max-width: fit-content;
-  }
+.bg-light-grey{
+  background-color: #d6d4cf;
 }
 
 /* Media Query for low resolution  Tablets, Ipads */

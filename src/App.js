@@ -7,9 +7,10 @@ import OutcomeScreen from './screens/outcomeScreens/Outcome.js'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/question" element={<QuestionScreen />} />

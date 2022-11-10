@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import {getQuestions} from '../../dummy-api/data.js'
 import Question from '../../components/questionsComponent/Question'
 import { saveQuestions } from '../../redux-files/actions/questions'
+import './questions.css'
 
 const QuestionScreen = () => {
     const [questions, setQuestions] = useState([])
@@ -32,9 +33,9 @@ const QuestionScreen = () => {
         }
     }
   return (
-      <div>
+      <div className='question-container'>
           <main>
-            <p className='question'>
+            <p className='question text-center'>
                   Question {currentQuestion + 1} of {questions.length}
               </p>
               {questions.length && (

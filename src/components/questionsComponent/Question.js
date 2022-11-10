@@ -11,14 +11,13 @@ const Question = ({question, responses, selectResponse}) => {
         selectResponse(response);
         dispatch(addResponse(response))
     }
-    console.log(responses)
   return (
-    <div className='questions-container'>
-      <Card className='border-color-secondary shadow-lg h-100 d-flex text-center'>
+    <div>
+      <Card className='shadow d-flex text-center'>
              <Card.Body>
-              <div className='container'>
+              <div className=''>
                       <Card.Header><h1>{question}</h1></Card.Header>
-                      <ul className="list-group shadow-lg">
+                      <ul className="list-group shadow-sm">
                   {responses?.map((response, key) => (
                       
                       <li className="list-group-item"

@@ -4,10 +4,9 @@ import { Card } from 'react-bootstrap'
 const Header = () => {
   return (
       <div className='row'>
-          <div className='container'>
-            {/* <Image /> */}
-              <h1 className='shadow h2'>Teamway Assessment Task</h1>
-              <Card.Title className='shadow-sm text-center rounded justify-content-center' >Take a Personality Test</Card.Title>
+          <div className='col-12 my-3'>
+            <img src='/teamway.png' className='d-block text-center mx-auto' style={{ width: '5rem' }}/>
+              <h1 className='display-6 text-center'>Teamway Assessment Task</h1>
           </div>
       </div>
   )

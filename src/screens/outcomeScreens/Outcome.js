@@ -3,6 +3,7 @@ import { Button, Card } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { computeVersion, EXTROVERT, INTROVERT } from '../../providers/computeVersion.js'
+import './outcome.css'
 
 const Outcome = () => {
   const navigate = useNavigate()
@@ -15,15 +16,15 @@ const Outcome = () => {
 
 
   return (
-    <div className='container text-center justify-content-center'>
-      <Card>
+    <div className='outcome-container'>
+      <Card className='question-container'>
         {version === EXTROVERT && (          
           <Card.Body>
           <Card.Header>
-            Your personality is more EXTROVERTED
+            You are most likely an EXTROVERT
           </Card.Header>
             <Card.Text>
-              Text about extroversion
+              hfjhzbjdfvzuhiofbjzbdj jdzjif hhjdhf jhdofo  fgviuavbidhifjijbvijbdifv jhidbfihibdifhbivjbid fgiiugiurtggbbvjhiuhdiuygfyugiherjh hgibebfihguguygruowijefoiajndjvbj  yvhdhvtafuehwiuiuhbigfuyg  hg8yyr8ytghbiaubuidgfyauhjwjbiaytgyefauwyteufgttuyijbc 
             </Card.Text>
           </Card.Body>
         )}
@@ -31,15 +32,15 @@ const Outcome = () => {
           <div>
             <Card.Body>
               <Card.Header>
-                Your personality is more INTROVERTED
+                You are more likely an INTROVERT
               </Card.Header>
-              <Card.Text>
+              <Card.Text className='text-center'>
                 Text about introversion
               </Card.Text>
             </Card.Body>
           </div>
         )}
-        <Button className='btn btn-lg bg-secondary' onClick={onClickRetake}>Retake Test</Button>
+        <a className='bg-light-grey border-0 outline-none text-center text-white text-decoration-none' role='button' onClick={onClickRetake}>Retake Test</a>
       </Card>
    </div>
    
