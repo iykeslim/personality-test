@@ -7,7 +7,7 @@ import Question from '../../components/questionsComponent/Question'
 import { saveQuestions } from '../../redux-files/actions/questions'
 import './questions.css'
 
-const QuestionScreen = () => {
+export default function QuestionScreen(){
     const [questions, setQuestions] = useState([])
     const [currentQuestion, setCurrentQuestion] = useState(0)
      
@@ -49,5 +49,3 @@ const QuestionScreen = () => {
       </div>
   )
 }
-
-export default QuestionScreen

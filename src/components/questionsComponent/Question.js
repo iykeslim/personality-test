@@ -16,7 +16,7 @@ const Question = ({question, responses, selectResponse}) => {
       <Card className='shadow d-flex text-center'>
              <Card.Body>
               <div className=''>
-                      <Card.Header><h1>{question}</h1></Card.Header>
+                      <Card.Header><h4>{question}</h4></Card.Header>
                       <ul className="list-group shadow-sm">
                   {responses?.map((response, key) => (
                       
