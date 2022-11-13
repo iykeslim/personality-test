@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Card } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { computeVersion, EXTROVERT, INTROVERT } from '../../providers/computeVersion.js'
 import './outcome.css'
@@ -11,8 +11,10 @@ const Outcome = () => {
   const version = computeVersion(responses)
 
   const onClickRetake = () => {
-    navigate('/')
+    navigate('/', {replace: true})
   }
+  console.log(responses)
+  console.log(version)
 
 
   return (
