@@ -1,32 +1,6 @@
-html,
-body {
-  width: 100vw;
-  min-height: 100vh;
-  box-sizing: border-box;
-  margin: 0;
-  font-family: -apple-system, helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;margin: 0;
-  overflow: auto;
-  background-size: cover;
-  background-color: #f5f5fe;
-  }
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 /* custom styles */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-.app {
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,40 +8,38 @@ code {
   height: 100vh;
   flex-direction: column;
 }
-.w-90{
+
+.w-90 {
   width: 90%;
 }
-.bg-light-blue{
+
+.bg-light-blue {
   background-color: #f5f5fe;
 }
-.bg-light-grey{
+
+.bg-light-grey {
   background-color: #d6d4cf;
 }
 
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-  body {
-    /* background-color:rgb(192, 164, 164) */
-  }
-}
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    /* background-color: blue; */
-  }
-}
 
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  body {
-    /* background-color: green; */
-  }
-}
 
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-  body {
-    /* background-color: white; */
-  }
-}
+
+
+
+
+
+
+
+
+
+
+/* main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: calc(100vh - 4rem);
+  padding: 0 4rem;
+} */

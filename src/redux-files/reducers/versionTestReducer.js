@@ -1,6 +1,6 @@
 const initialState = {
     questions: [],
-    responses: []
+    answers: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -10,11 +10,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 questions: action.payload
             };
-        case "addResponse":
+        case "addanswer":
             return {
                 ...state,
-                responses: [
-                    ...state.responses,
+                answers: [
+                    ...state.answers,
                     action.payload
                 ]
             }

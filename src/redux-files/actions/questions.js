@@ -1,6 +1,6 @@
 export const saveQuestions = (questions) => {
-    return {
-        type: "showQuestions",
-        payload: questions
-    };
+  return {
+    type: "showQuestions",
+    payload: questions
+  };
 };
