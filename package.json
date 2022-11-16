@@ -19,7 +19,7 @@
     "redux": "4.1.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@vitejs/plugin-react": "^1.0.7",
     "eslint": "^7.32.0",
@@ -35,5 +35,11 @@
     "react-test-renderer": "^17.0.2",
     "vite": "^2.7.2",
     "vite-jest": "^0.1.4"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/mocks/fileMock.js"
+    }
   }
 }
