@@ -1,6 +1,6 @@
-export const addanswer = (answer) => {
+export const addAnswer = (answer) => {
     return {
-      type: "addanswer",
+      type: "addAnswer",
       payload: answer
     };
   };

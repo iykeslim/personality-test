@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 questions: action.payload
             };
-        case "addanswer":
+        case "addAnswer":
             return {
                 ...state,
                 answers: [

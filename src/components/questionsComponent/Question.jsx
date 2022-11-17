@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
-import { addanswer } from '../../redux-files/actions/answer';
+import { addAnswer } from '../../redux-files/actions/answer';
 
 const Question = ({ question, answers, selectAnswer }) => {
   const dispatch = useDispatch()
@@ -9,7 +9,7 @@ const Question = ({ question, answers, selectAnswer }) => {
 
   function onClickanswer(answer) {
     selectAnswer(answer);
-    dispatch(addanswer(answer))
+    dispatch(addAnswer(answer))
   }
   return (
     <div data-testid='question-show'>
