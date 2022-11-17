@@ -32,14 +32,14 @@ export default function QuestionPage() {
   return (
     <div>
       <main>
-        <p className="questions">
+        <p className='d-flex justify-content-center'>
           Question {currentQuestion + 1} of {questions.length}
         </p>
         {questions.length && (
           <Question
             question={questions[currentQuestion].question}
             answers={questions[currentQuestion].answers}
-            selectanswer={onSelectanswer}
+            selectAnswer={onSelectanswer}
           />
         )}
       </main>
