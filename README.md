@@ -22,5 +22,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## See more details in the commit history for this repo
 
-A day and more and I have only typed a ReadME on this project because I've been so preoccupied with work trying to leave the job but I must be done with all my tasks
 

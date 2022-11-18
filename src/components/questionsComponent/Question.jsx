@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
 import { addAnswer } from '../../redux-files/actions/answer';
+import { Retake } from '../Retake.jsx';
 
 const Question = ({ question, answers, selectAnswer }) => {
   const dispatch = useDispatch()
@@ -35,6 +36,7 @@ const Question = ({ question, answers, selectAnswer }) => {
           </div >
         </Card.Body>
       </Card>
+      <Retake />
     </div>
   )
 }

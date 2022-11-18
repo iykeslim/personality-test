@@ -3,6 +3,12 @@ import '@testing-library/jest-dom'
 import Question from './Question.jsx';
 import { fireEvent, render, screen } from '@testing-library/react';
 
+const mockedUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+    ...jest.requireActual('react-router-dom'),
+    useNavigate: () => mockedUsedNavigate,
+}));
+
 const mockedDispatch = jest.fn();
 const clickedOn = jest.fn();
 const answers = [
