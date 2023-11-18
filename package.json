@@ -4,7 +4,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "serve": "npm run build && vite preview",
     "test": "jest"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@vitejs/plugin-react": "^1.0.7",
+    "create-vite": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
