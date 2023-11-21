@@ -8,7 +8,7 @@ const Header = () => {
     <div className='row'>
       <div className='col-12 my-3'>
         <img src={teamway} className='d-block text-center mx-auto' style={{ width: '5rem' }} />
-        <h1 className='display-6 text-center text-white' data-testid="welcome">Personality Test Application</h1>
+        <h1 className='display-6 text-center text-white mt-3' data-testid="welcome" style={{ fontSize: "3rem" }}>Personality Test Application</h1>
       </div>
     </div>
   )

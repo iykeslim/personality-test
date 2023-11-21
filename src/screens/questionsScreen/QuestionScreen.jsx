@@ -32,7 +32,7 @@ export default function QuestionPage() {
   return (
     <div>
       <main>
-        <p className='d-flex justify-content-center'>
+        <p className='d-flex justify-content-center text-white'>
           Question {currentQuestion + 1} of {questions.length}
         </p>
         {questions.length && (
