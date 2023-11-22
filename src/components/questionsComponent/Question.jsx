@@ -1,35 +1,32 @@
-import React, { useState } from 'react'
-import Card from 'react-bootstrap/Card';
-import { useDispatch } from 'react-redux';
-import { addAnswer } from '../../redux-files/actions/answer';
-import { Retake } from '../Retake.jsx';
+import React from "react"
+import Card from "react-bootstrap/Card"
+import { useDispatch } from "react-redux"
+import { addAnswer } from "../../redux-files/actions/answer"
+import { Retake } from "../Retake.jsx"
+import "./Question.css" // Create a CSS file for styling
 
 const Question = ({ question, answers, selectAnswer }) => {
   const dispatch = useDispatch()
 
-
   function onClickanswer(answer) {
-    selectAnswer(answer);
+    selectAnswer(answer)
     dispatch(addAnswer(answer))
   }
+
   return (
-    <div data-testid="question-show">
-      <Card
-        className="d-flex text-center border-0"
-        style={{ backgroundColor: "transparent" }}
-      >
+    <div data-testid="question-show" className="chat-container">
+      <Card className="d-flex text-center border-0 chat-bubble">
         <Card.Body>
-          <div className="" style={{ backgroundColor: "transparent" }}>
-            <Card.Header className='border-0'>
-              <h4 className="text-white border-0" style={{ fontSize: "1.5rem" }}>
+          <div className="chat-content">
+            <Card.Header className="border-0">
+              <h4 className="text-white border-0 chat-bubble-question">
                 {question}
               </h4>
             </Card.Header>
-            <ul className="list-group border-0 " data-testid="answers-show">
+            <ul className="list-group border-0" data-testid="answers-show">
               {answers.map((answer, key) => (
                 <li
-                  style={{ backgroundColor: "transparent" }}
-                  className="list-group-item border-0 text-white"
+                  className="list-group-item border-0 text-white chat-bubble-answer"
                   data-testid="answer-show"
                   role="button"
                   key={key}
@@ -48,4 +45,3 @@ const Question = ({ question, answers, selectAnswer }) => {
 }
 
 export default Question
-

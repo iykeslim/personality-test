@@ -17,7 +17,7 @@ const Welcome = () => {
         id="main-container"
         className="text-center p-3 mb-5 bg-transparent border-0"
       >
-        <Card.Body className="rounded-3" style={{ backgroundColor: "transparent" }}>
+        <Card.Body className="rounded-3" >
           <Card.Header className="my-3 text-white border-0">
             Take a personality test: find out if you are an Introvert or an
             Extrovert

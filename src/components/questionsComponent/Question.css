@@ -1,0 +1,113 @@
+/* Question.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-bubble {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 123, 255, 0.4);
+  padding: 10px;
+  color: #fff;
+}
+
+.chat-bubble::before,
+.chat-bubble::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-style: solid;
+}
+
+.chat-bubble::before {
+  border-width: 10px 15px 10px 0;
+  border-color: transparent rgba(0, 123, 255, 0.8) transparent transparent;
+  right: 100%;
+  top: 15px;
+}
+
+.chat-bubble::after {
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent rgba(0, 123, 255, 0.8);
+  left: 100%;
+  top: 15px;
+}
+
+.chat-bubble-question {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 123, 255, 0.6);
+  padding: 10px;
+  color: #fff;
+}
+
+.chat-bubble-question::before,
+.chat-bubble-question::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-style: solid;
+}
+
+.chat-bubble-question::before {
+  border-width: 10px 15px 10px 0;
+  border-color: transparent rgba(0, 123, 255, 0.6) transparent transparent;
+  right: 100%;
+  top: 15px;
+}
+
+.chat-bubble-question::after {
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent rgba(0, 123, 255, 0.6);
+  left: 100%;
+  top: 15px;
+}
+
+.chat-bubble-answer {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #fff;
+  width: fit-content;
+}
+
+.chat-bubble-answer::before,
+.chat-bubble-answer::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-style: solid;
+}
+
+.chat-bubble-answer::before {
+  border-width: 10px 15px 10px 0;
+  border-color: transparent rgba(0, 123, 255, 0.8) transparent transparent;
+  right: 100%;
+  top: 15px;
+}
+
+.chat-bubble-answer::after {
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent rgba(0, 123, 255, 0.8);
+  left: 100%;
+  top: 15px;
+}
+
+.chat-bubble-answer:nth-child(odd) {
+  background-color: rgba(0, 123, 255, 0.8);
+  margin-right: auto;
+}
+
+.chat-bubble-answer:nth-child(even) {
+  background-color: rgba(0, 123, 255, 0.6);
+  margin-left: auto;
+}
