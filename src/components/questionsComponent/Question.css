@@ -78,6 +78,14 @@
   padding: 10px;
   color: #fff;
   width: fit-content;
+  /* Add cursor pointer to indicate interactivity */
+  cursor: pointer;
+  /* Add transition for smooth hover effect */
+  transition: background-color 0.3s ease;
+}
+/* Add hover effect to indicate interactivity */
+.chat-bubble-answer:hover {
+  background-color: rgba(0, 123, 255, 0.9);
 }
 
 .chat-bubble-answer::before,
