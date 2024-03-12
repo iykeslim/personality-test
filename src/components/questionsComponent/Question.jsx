@@ -1,3 +1,5 @@
+// Question.jsx
+
 import React from "react"
 import Card from "react-bootstrap/Card"
 import { useDispatch } from "react-redux"
@@ -13,6 +15,13 @@ const Question = ({ question, answers, selectAnswer }) => {
     dispatch(addAnswer(answer))
   }
 
+  // Function to toggle the alternate class for text color
+  function toggleAlternateClass(index) {
+    return index % 2 === 0
+      ? "chat-bubble-answer"
+      : "chat-bubble-answer alternate"
+  }
+
   return (
     <div data-testid="question-show" className="chat-container">
       <Card className="d-flex text-center border-0 chat-bubble">
@@ -26,7 +35,9 @@ const Question = ({ question, answers, selectAnswer }) => {
             <ul className="list-group border-0" data-testid="answers-show">
               {answers.map((answer, key) => (
                 <li
-                  className="list-group-item border-0 text-white chat-bubble-answer"
+                  className={`list-group-item border-0 text-white ${toggleAlternateClass(
+                    key,
+                  )}`} // Apply the alternate class based on index
                   data-testid="answer-show"
                   role="button"
                   key={key}
