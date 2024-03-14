@@ -1,0 +1,6 @@
+/* Reduce font size for smaller screens */
+@media (max-width: 576px) {
+  h1.display-6 {
+    font-size: 2rem;
+  }
+}

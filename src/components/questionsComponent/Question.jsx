@@ -1,5 +1,3 @@
-// Question.jsx
-
 import React from "react"
 import Card from "react-bootstrap/Card"
 import { useDispatch } from "react-redux"
@@ -42,6 +40,7 @@ const Question = ({ question, answers, selectAnswer }) => {
                   role="button"
                   key={key}
                   onClick={() => onClickanswer(answer)}
+                  style={{ fontSize: "1rem", marginBottom: "5px" }} // Adjust font size for smaller screens
                 >
                   {answer.answer}
                 </li>
