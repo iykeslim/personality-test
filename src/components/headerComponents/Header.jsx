@@ -13,7 +13,7 @@ const Header = () => {
         <h1
           className="display-6 text-center text-white mt-3"
           data-testid="welcome"
-          style={{ fontSize: "1.5rem", marginBottom: "10px" }}
+          style={{ fontSize: window.innerWidth > 768 ? "30px" : "24px", marginBottom: "10px" }}
         >
           Personality Test Application
         </h1>

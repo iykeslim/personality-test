@@ -35,7 +35,7 @@ export default function QuestionPage() {
         <p className='d-flex justify-content-center text-white'>
           Question {currentQuestion + 1} of {questions.length}
         </p>
-        <p className='d-flex justify-content-center text-white'>Click on an answer </p>
+        <p className='d-flex justify-content-center text-white'>Click on your preferred answer </p>
         {questions.length && (
           <Question
             question={questions[currentQuestion].question}
